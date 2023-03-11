@@ -230,6 +230,10 @@ namespace vMenuClient
             { "weapon_pistolxm3", GetLabelText("WTD_PISTOLXM3") },
             { "weapon_candycane", GetLabelText("WTD_CANDYCANE") },
             { "weapon_railgunxm3", GetLabelText("WTD_RAILGUNXM3") },
+            //addons
+            { "weapon_beanbag", GetLabelText("WTD_SG_BB") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WTD_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WTD_GL_RUBBER") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new Dictionary<string, string>()
@@ -345,6 +349,10 @@ namespace vMenuClient
             { "weapon_candycane", GetLabelText("WT_CANDYCANE") },
             { "weapon_railgunxm3", GetLabelText("WT_RAILGUNXM3") },
             { "weapon_acidpackage", GetLabelText("WT_ACIDPACKAGE") },
+            //add on
+            { "weapon_beanbag", GetLabelText("WT_SG_BB") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WT_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WT_GL_RUBBER") },
         };
         #endregion
 
@@ -462,6 +470,10 @@ namespace vMenuClient
             ["weapon_candycane"] = Permission.WPCandyCane,
             ["weapon_railgunxm3"] = Permission.WPRailgunXM3,
             ["weapon_acidpackage"] = Permission.WPAcidPackage,
+            // add on
+            ["weapon_beanbag"] = Permission.WPBeanbag,
+            ["weapon_grenadelaunchersmoke"] = Permission.WPGrenadeLauncherSmoke,
+            ["weapon_grenadelauncher_rubber"] = Permission.WPGrenadeLauncherRubber,
         };
         #endregion
 
