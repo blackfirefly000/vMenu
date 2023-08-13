@@ -318,6 +318,12 @@ namespace vMenuShared
             WPRailgunXM3,
             WPAcidPackage,
             WPTecPistol,
+            //Add On
+            WPBeanbag,
+            WPGrenadeLauncherRubber,
+            WPColbaton,
+            WPM6ic,
+            WPPocketlight,
             #endregion
 
             // Weapon Loadouts Menu

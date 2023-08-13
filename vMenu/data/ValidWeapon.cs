@@ -259,6 +259,13 @@ namespace vMenuClient.data
             { "weapon_railgunxm3", GetLabelText("WTD_RAILGUNXM3") },
             // MP2023_01 DLC (V 2944)
             { "weapon_tecpistol", GetLabelText("WTD_TECPISTOL") },
+            // Add On
+            { "weapon_beanbag", GetLabelText("WTD_BEANBAG") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WTD_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WTD_GL_RUBBER") },
+            { "weapon_colbaton", GetLabelText("WTD_COLBATON") },
+            { "weapon_m6ic", GetLabelText("WTD_M6IC") },
+            { "weapon_pocketlight", GetLabelText("WTD_POCKETLIGHT") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -376,6 +383,13 @@ namespace vMenuClient.data
             { "weapon_acidpackage", GetLabelText("WT_ACIDPACKAGE") },
             // MP2023_01 DLC (V 2944)
             { "weapon_tecpistol", GetLabelText("WT_TECPISTOL") },
+            // Add On
+            { "weapon_beanbag", GetLabelText("WT_BEANBAG") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WT_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WT_GL_RUBBER") },
+            { "weapon_colbaton", GetLabelText("WT_COLBATON") },
+            { "weapon_m6ic", GetLabelText("WT_M6IC") },
+            { "weapon_pocketlight", GetLabelText("WT_POCKETLIGHT") },
         };
         #endregion
 
@@ -495,6 +509,14 @@ namespace vMenuClient.data
             ["weapon_acidpackage"] = Permission.WPAcidPackage,
             // MP2023_01 DLC (V 2944)
             ["weapon_tecpistol"] = Permission.WPTecPistol,
+            // Add On
+            ["weapon_beanbag"] = Permission.WPBeanbag,
+            ["weapon_grenadelaunchersmoke"] = Permission.WPGrenadeLauncherSmoke,
+            ["weapon_grenadelauncher_rubber"] = Permission.WPGrenadeLauncherRubber,
+            ["weapon_colbaton"] = Permission.WPColbaton,
+            ["weapon_m6ic"] = Permission.WPM6ic,
+            ["weapon_pocketlight"] = Permission.WPPocketlight,
+
         };
         #endregion
 
@@ -912,6 +934,15 @@ namespace vMenuClient.data
             ["COMPONENT_MICROSMG_VARMOD_FRN"] = GetLabelText("WCT_MSMGFRN_VAR"),
             ["COMPONENT_CARBINERIFLE_VARMOD_MICH"] = GetLabelText("WCT_CRBNMIC_VAR"),
             ["COMPONENT_RPG_VARMOD_TVR"] = GetLabelText("WCT_RPGTVR_VAR"),
+            // Add On
+            ["COMPONENT_COLBATON_GRIP_01"] = GetLabelText("WCT_CBTN_GRIP"),
+            ["COMPONENT_PLIGHT_W"] = GetLabelText("WCT_PFLASH"),
+            ["COMPONENT_PLIGHT_UV"] = GetLabelText("WCT_PFLASH_UV"),
+            ["COMPONENT_PLIGHT_RED"] = GetLabelText("WCT_PFLASH_RED"),
+            ["COMPONENT_PLIGHT_WAND_W"] = GetLabelText("WCT_PFLASH_WAND_W"),
+            ["COMPONENT_PLIGHT_WAND_R"] = GetLabelText("WCT_PFLASH_WAND_R"),
+            ["COMPONENT_PLIGHT_WAND_A"] = GetLabelText("WCT_PFLASH_WAND_A"),
+            ["COMPONENT_PLIGHT_WAND_G"] = GetLabelText("WCT_PFLASH_WAND_G"),
         };
         #endregion
 
