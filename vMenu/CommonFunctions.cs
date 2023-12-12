@@ -1488,7 +1488,6 @@ namespace vMenuClient
             public bool bulletProofTires;
             public int headlightColor;
             public float enveffScale;
-            public string Category;
         };
         #endregion
 
@@ -1583,8 +1582,7 @@ namespace vMenuClient
                         xenonHeadlights = IsToggleModOn(veh.Handle, 22),
                         bulletProofTires = !veh.CanTiresBurst,
                         headlightColor = VehicleOptions.GetHeadlightsColorForVehicle(veh),
-                        enveffScale = GetVehicleEnveffScale(veh.Handle),
-                        Category = "Uncategorized"
+                        enveffScale = GetVehicleEnveffScale(veh.Handle)
                     };
 
                     #endregion
