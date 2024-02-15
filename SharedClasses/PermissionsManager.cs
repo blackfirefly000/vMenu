@@ -323,6 +323,12 @@ namespace vMenuShared
             WPBattleRifle,
             WPSnowLauncher,
             WPHackingDevice,
+            // Add On
+            WPBeanbag,
+            WPGrenadeLauncherRubber,
+            WPColbaton,
+            WPM6ic,
+            WPPocketlight,
             #endregion
 
             // Weapon Loadouts Menu
