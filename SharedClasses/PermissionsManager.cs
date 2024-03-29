@@ -329,6 +329,7 @@ namespace vMenuShared
             WPColbaton,
             WPM6ic,
             WPPocketlight,
+            WPFlamethrower,
             #endregion
 
             // Weapon Loadouts Menu
