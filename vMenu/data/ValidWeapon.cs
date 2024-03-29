@@ -269,6 +269,7 @@ namespace vMenuClient.data
             { "weapon_colbaton", GetLabelText("WTD_COLBATON") },
             { "weapon_m6ic", GetLabelText("WTD_M6IC") },
             { "weapon_pocketlight", GetLabelText("WTD_POCKETLIGHT") },
+            { "weapon_flamethrower", GetLabelText("WTD_FLAMETHROWER") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -397,6 +398,8 @@ namespace vMenuClient.data
             { "weapon_colbaton", GetLabelText("WT_COLBATON") },
             { "weapon_m6ic", GetLabelText("WT_M6IC") },
             { "weapon_pocketlight", GetLabelText("WT_POCKETLIGHT") },
+            { "weapon_flamethrower", GetLabelText("WT_FLAMETHROWER") },
+
         };
         #endregion
 
@@ -527,6 +530,7 @@ namespace vMenuClient.data
             ["weapon_colbaton"] = Permission.WPColbaton,
             ["weapon_m6ic"] = Permission.WPM6ic,
             ["weapon_pocketlight"] = Permission.WPPocketlight,
+            ["weapon_flamethrower"] = Permission.WPFlamethrower,
         };
         #endregion
 
