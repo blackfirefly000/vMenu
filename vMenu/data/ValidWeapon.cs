@@ -270,6 +270,7 @@ namespace vMenuClient.data
             { "weapon_m6ic", GetLabelText("WTD_M6IC") },
             { "weapon_pocketlight", GetLabelText("WTD_POCKETLIGHT") },
             { "weapon_flamethrower", GetLabelText("WTD_FLAMETHROWER") },
+            { "weapon_416", GetLabelText("WTD_416") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -399,6 +400,7 @@ namespace vMenuClient.data
             { "weapon_m6ic", GetLabelText("WT_M6IC") },
             { "weapon_pocketlight", GetLabelText("WT_POCKETLIGHT") },
             { "weapon_flamethrower", GetLabelText("WT_FLAMETHROWER") },
+            { "weapon_416", GetLabelText("WT_416") },
 
         };
         #endregion
@@ -531,6 +533,7 @@ namespace vMenuClient.data
             ["weapon_m6ic"] = Permission.WPM6ic,
             ["weapon_pocketlight"] = Permission.WPPocketlight,
             ["weapon_flamethrower"] = Permission.WPFlamethrower,
+            ["weapon_416"] = Permission.WP416,
         };
         #endregion
 
@@ -963,6 +966,8 @@ namespace vMenuClient.data
             ["COMPONENT_PLIGHT_WAND_R"] = GetLabelText("WCT_PFLASH_WAND_R"),
             ["COMPONENT_PLIGHT_WAND_A"] = GetLabelText("WCT_PFLASH_WAND_A"),
             ["COMPONENT_PLIGHT_WAND_G"] = GetLabelText("WCT_PFLASH_WAND_G"),
+            ["COMPONENT_AT_416_FLSH"] = GetLabelText("WCT_FLASH"),
+            ["COMPONENT_AT_416_SUPP"] = GetLabelText("WCT_SUPP"),
         };
         #endregion
 
