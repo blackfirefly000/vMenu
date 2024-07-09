@@ -264,6 +264,15 @@ namespace vMenuClient.data
             { "weapon_snowlauncher", GetLabelText("WTD_SNOWLNCHR") },
             // MP2024_01 DLC (V 3258)
             { "weapon_stunrod", GetLabelText("WTD_STUNROD") },
+            // Add On
+            { "weapon_beanbag", GetLabelText("WTD_BEANBAG") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WTD_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WTD_GL_RUBBER") },
+            { "weapon_colbaton", GetLabelText("WTD_COLBATON") },
+            { "weapon_m6ic", GetLabelText("WTD_M6IC") },
+            { "weapon_pocketlight", GetLabelText("WTD_POCKETLIGHT") },
+            { "weapon_flamethrower", GetLabelText("WTD_FLAMETHROWER") },
+            { "weapon_416", GetLabelText("WTD_416") },
         };
 
         public static readonly Dictionary<string, string> weaponNames = new()
@@ -387,6 +396,15 @@ namespace vMenuClient.data
             { "weapon_hackingdevice", GetLabelText("WT_HACKDEVICE") },
             // MP2024_01 DLC (V 3258)
             { "weapon_stunrod", GetLabelText("WT_STUNROD") },
+            // Add On
+            { "weapon_beanbag", GetLabelText("WT_BEANBAG") },
+            { "weapon_grenadelaunchersmoke", GetLabelText("WT_GL_SMOKE") },
+            { "weapon_grenadelauncher_rubber", GetLabelText("WT_GL_RUBBER") },
+            { "weapon_colbaton", GetLabelText("WT_COLBATON") },
+            { "weapon_m6ic", GetLabelText("WT_M6IC") },
+            { "weapon_pocketlight", GetLabelText("WT_POCKETLIGHT") },
+            { "weapon_flamethrower", GetLabelText("WT_FLAMETHROWER") },
+            { "weapon_416", GetLabelText("WT_416") },
         };
         #endregion
 
@@ -512,6 +530,15 @@ namespace vMenuClient.data
             ["weapon_hackingdevice"] = Permission.WPHackingDevice,
             // MP2024_01 DLC (V 3258)
             ["weapon_stunrod"] = Permission.WPStunRod,
+            // Add On
+            ["weapon_beanbag"] = Permission.WPBeanbag,
+            ["weapon_grenadelaunchersmoke"] = Permission.WPGrenadeLauncherSmoke,
+            ["weapon_grenadelauncher_rubber"] = Permission.WPGrenadeLauncherRubber,
+            ["weapon_colbaton"] = Permission.WPColbaton,
+            ["weapon_m6ic"] = Permission.WPM6ic,
+            ["weapon_pocketlight"] = Permission.WPPocketlight,
+            ["weapon_flamethrower"] = Permission.WPFlamethrower,
+            ["weapon_416"] = Permission.WP416,
         };
         #endregion
 
@@ -937,6 +964,17 @@ namespace vMenuClient.data
             ["COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"] = GetLabelText("WCT_HVSP_XM"),
             // MP2024_01 DLC (V 3258)
             ["COMPONENT_STUNGUN_VARMOD_BAIL"] = GetLabelText("WCT_STNGN_BAIL"),
+            // Add On
+            ["COMPONENT_COLBATON_GRIP_01"] = GetLabelText("WCT_CBTN_GRIP"),
+            ["COMPONENT_PLIGHT_W"] = GetLabelText("WCT_PFLASH"),
+            ["COMPONENT_PLIGHT_UV"] = GetLabelText("WCT_PFLASH_UV"),
+            ["COMPONENT_PLIGHT_RED"] = GetLabelText("WCT_PFLASH_RED"),
+            ["COMPONENT_PLIGHT_WAND_W"] = GetLabelText("WCT_PFLASH_WAND_W"),
+            ["COMPONENT_PLIGHT_WAND_R"] = GetLabelText("WCT_PFLASH_WAND_R"),
+            ["COMPONENT_PLIGHT_WAND_A"] = GetLabelText("WCT_PFLASH_WAND_A"),
+            ["COMPONENT_PLIGHT_WAND_G"] = GetLabelText("WCT_PFLASH_WAND_G"),
+            ["COMPONENT_AT_416_FLSH"] = GetLabelText("WCT_FLASH"),
+            ["COMPONENT_AT_416_SUPP"] = GetLabelText("WCT_SUPP"),
         };
         #endregion
 
