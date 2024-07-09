@@ -325,6 +325,14 @@ namespace vMenuShared
             WPHackingDevice,
             // MP2024_01 DLC (V 3258)
             WPStunRod,
+            // Add On
+            WPBeanbag,
+            WPGrenadeLauncherRubber,
+            WPColbaton,
+            WPM6ic,
+            WPPocketlight,
+            WPFlamethrower,
+            WP416,
             #endregion
 
             // Weapon Loadouts Menu
