@@ -1107,7 +1107,7 @@ namespace vMenuClient.menus
 
                     if (sender == primaryColorsMenu)
                     {
-                        if (itemIndex == 1)
+                        if (itemIndex == 2)
                         {
                             pearlColor = VehicleData.ClassicColors[newIndex].id;
                         }
