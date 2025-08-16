@@ -1,0 +1,37 @@
+name: Build vMenu DLLs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # 1. Check out the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup MSBuild (needed for .NET Framework)
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      # 3. Restore NuGet packages
+      - name: Restore NuGet packages
+        run: nuget restore vMenu.sln
+
+      # 4. Build solution in Release mode
+      - name: Build solution
+        run: msbuild vMenu.sln /p:Configuration=Release
+
+      # 5. Upload the DLLs so you can download them
+      - name: Upload DLLs
+        uses: actions/upload-artifact@v4
+        with:
+          name: vMenu-DLLs
+          path: |
+            vMenu/bin/Release/*.dll
+            vMenuServer/bin/Release/*.dll
