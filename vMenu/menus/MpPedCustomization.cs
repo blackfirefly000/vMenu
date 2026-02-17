@@ -1452,6 +1452,8 @@ namespace vMenuClient.menus
             {
                 int componentIndex = realIndex + 1;
 
+                int newSelectionIndex;
+
                 int controlIndex = 0;
                 bool isCtrlPressed = Game.IsControlPressed(controlIndex, Control.Duck);
                 
@@ -1598,7 +1600,7 @@ namespace vMenuClient.menus
                     }
                 }
                 
-                int listIndex = listItem.ListIndex;
+                listIndex = listItem.ListIndex;
                 
                 if (listIndex >= GetNumberOfPedPropDrawableVariations(Game.PlayerPed.Handle, propIndex))
                     return;
@@ -1660,8 +1662,6 @@ namespace vMenuClient.menus
                 {
                     propIndex = 7;
                 }
-
-                int propIndex = itemIndex;
 
                 if (newSelectionIndex == -1)
                 {
