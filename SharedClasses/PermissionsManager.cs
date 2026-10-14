@@ -113,6 +113,7 @@ namespace vMenuShared
             #region vehicle spawner
             VSMenu,
             VSAll,
+            VSBypassRateLimit,
             VSDisableReplacePrevious,
             VSSpawnByName,
             VSAddon,
@@ -331,6 +332,8 @@ namespace vMenuShared
             WPHackingDevice,
             // MP2024_01 DLC (V 3258)
             WPStunRod,
+            // MP2025_02 DLC (V 3717)
+            WPNewspaper,
             #endregion
 
             // Weapon Loadouts Menu
@@ -479,8 +482,7 @@ namespace vMenuShared
             {
                 return false;
             }
-
-            return IsPlayerAceAllowed(playerHandle, GetAceName(permission));
+            return GetPermissionAndParentPermissions(permission).Any(p => IsPlayerAceAllowed(playerHandle, GetAceName(p)));
         }
 #endif
 

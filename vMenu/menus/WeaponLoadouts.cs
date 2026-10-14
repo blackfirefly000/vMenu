@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
 using CitizenFX.Core;
 
@@ -71,7 +72,18 @@ namespace vMenuClient.menus
 
             foreach (var save in saves)
             {
-                SavedWeapons.Add(save, JsonConvert.DeserializeObject<List<ValidWeapon>>(GetResourceKvpString(save)));
+                var kvpValue = GetResourceKvpString(save);
+                if (!string.IsNullOrEmpty(kvpValue))
+                {
+                    try
+                    {
+                        SavedWeapons.Add(save, JsonConvert.DeserializeObject<List<ValidWeapon>>(kvpValue));
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"[vMenu] Error: Failed to load corrupted saved loadout.\nStacktrace: {ex.StackTrace}\nError message: {ex.Message}\nSaved JSON: {kvpValue}\nSaveName: {save}");
+                    }
+                }
             }
 
             return SavedWeapons;
@@ -185,7 +197,7 @@ namespace vMenuClient.menus
 
                     if (item == spawnLoadout) // spawn
                     {
-                        await SpawnWeaponLoadoutAsync(SelectedSavedLoadoutName, false, true, false);
+                        await SpawnWeaponLoadoutAsync(SelectedSavedLoadoutName, false, false, false);
                     }
                     else if (item == renameLoadout || item == cloneLoadout) // rename or clone
                     {

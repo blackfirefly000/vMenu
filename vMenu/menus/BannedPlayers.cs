@@ -43,8 +43,7 @@ namespace vMenuClient.menus
         {
             menu = new Menu(Game.Player.Name, "Banned Players Management");
 
-            menu.InstructionalButtons.Add(Control.Jump, "Filter Options");
-            menu.ButtonPressHandlers.Add(new Menu.ButtonPressHandler(Control.Jump, Menu.ControlPressCheckType.JUST_RELEASED, new Action<Menu, Control>(async (a, b) =>
+            menu.AddKeyBinding("filter_bans", "vMenu: filter banned players", "SPACE", "RLEFT_INDEX", MenuKeyPressType.JUST_RELEASED, new Action<Menu, MenuKeyBinding>(async (a, b) =>
             {
                 if (banlist.Count > 1)
                 {
@@ -67,7 +66,7 @@ namespace vMenuClient.menus
                 }
 
                 Log($"Button pressed: {a} {b}");
-            }), true));
+            }), "Filter Options");
 
             bannedPlayer.AddMenuItem(new MenuItem("Player Name"));
             bannedPlayer.AddMenuItem(new MenuItem("Banned By"));
@@ -122,7 +121,12 @@ namespace vMenuClient.menus
 
             menu.OnItemSelect += (sender, item, index) =>
             {
-                currentRecord = item.ItemData;
+                if (item.ItemData is not BanRecord banRecord)
+                {
+                    return;
+                }
+
+                currentRecord = banRecord;
 
                 bannedPlayer.MenuSubtitle = "Ban Record: ~y~" + currentRecord.playerName;
                 var nameItem = bannedPlayer.GetMenuItems()[0];
