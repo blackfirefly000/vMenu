@@ -666,7 +666,7 @@ namespace vMenuClient.menus
                 }
                 else
                 {
-                    var propListItem = new MenuListItem($"{propNames[x]}", propsList, 0, "Select a prop using the arrow keys and press ~o~enter~s~ to cycle through all available textures.");
+                    var propListItem = new MenuListItem($"{propNames[x]}", propsList, -1, "Select a prop using the arrow keys and press ~o~enter~s~ to cycle through all available textures.");
                     propsMenu.AddMenuItem(propListItem);
                 }
             }
